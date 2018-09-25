@@ -17,6 +17,11 @@
         <!-- lookup parent from repository -->
     </parent>
 
+    <modules>
+        <module>project_pojo</module>
+        <module>sso_interface</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -32,6 +37,10 @@
         <commons-io.version>1.3.2</commons-io.version>
         <commons-net.version>3.3</commons-net.version>
         <pagehelper.version>3.2.2</pagehelper.version>
+        <mybatis-spring-boot>1.3.0</mybatis-spring-boot>
+        <shiro-core>1.2.2</shiro-core>
+        <druid>1.0.18</druid>
+        <spring-shiro>1.3.2</spring-shiro>
     </properties>
 
     <dependencies>
@@ -40,7 +49,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <scope>test</scope>
+            <version>${mybatis-spring-boot}</version>
         </dependency>
 
         <!-- Spring Boot Web 依赖 -->
@@ -97,7 +106,25 @@
             <version>${pagehelper.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro-core}</version>
+        </dependency>
 
+        <!--整合druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid}</version>
+        </dependency>
+
+        <!-- shiro权限控制框架 -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${spring-shiro}</version>
+        </dependency>
 
 
     </dependencies>
