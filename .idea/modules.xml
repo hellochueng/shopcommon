@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/shopcommon.iml" filepath="$PROJECT_DIR$/shopcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common.iml" filepath="$PROJECT_DIR$/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project_pojo/demo.iml" filepath="$PROJECT_DIR$/project_pojo/demo.iml" />
     </modules>
   </component>
 </project>
